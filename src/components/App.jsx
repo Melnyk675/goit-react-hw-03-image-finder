@@ -3,9 +3,9 @@ import { Toaster } from 'react-hot-toast';
 import { ImageGallery } from './ImageGallery/ImageGallery';
 import { getSearch } from 'api/getSearch'; 
 import { Searchbar } from './Searchbar/Searchbar'; 
-import { Button } from 'components/Button/Button';
-import { Loader } from 'components/Loader/Loader'; 
-import { Modal } from 'components/Modal/Modal';
+import { Button } from './Button/Button';
+import { Loader } from './Loader/Loader'; 
+import { Modal } from './Modal/Modal';
 
 export class App extends Component {
   state = {

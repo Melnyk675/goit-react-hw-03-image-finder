@@ -3,21 +3,16 @@ import { ThreeCircles } from 'react-loader-spinner';
 export const Loader = () => {
     return (
       <ThreeCircles
-  height="80"
-  width="80"
+  height="100"
+  width="100"
   color="#4fa94d"
-  wrapperStyle={{ 
-  display: 'block',
-  marginTop: 20,
-  marginLeft: 'auto',
-  marginRight: 'auto',
-}}
+  wrapperStyle={{}}
   wrapperClass=""
   visible={true}
   ariaLabel="three-circles-rotating"
   outerCircleColor=""
   innerCircleColor=""
   middleCircleColor=""
-    />
+/>
     );
 }

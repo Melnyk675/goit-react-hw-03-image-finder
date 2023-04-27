@@ -5,7 +5,7 @@ import { getSearch } from 'api/getSearch';
 import { Searchbar } from './Searchbar/Searchbar'; 
 import { Button } from 'components/Button/Button';
 import { Loader } from 'components/Loader/Loader'; 
-import { Modal } from './Modal/Modal';
+import { Modal } from 'components/Modal/Modal';
 
 export class App extends Component {
   state = {

@@ -8,7 +8,7 @@ export const ImageGalleryItem = ({ images, togleModal }) => {
         <li key={item.id} onClick={(evt)=>{togleModal(item.largeImageURL, item.tags);}} className={css.galleryItem}>
           <img
             loading="lazy"
-            className={css.ImageGalleryItem}
+            className={css.imageGalleryItem}
             src={item.webformatURL}
             alt={item.tags}
           />

@@ -16,3 +16,5 @@ ImageGallery.propTypes = {
   images: PropTypes.arrayOf(PropTypes.object).isRequired, 
   togleModal: PropTypes.func.isRequired 
 };
+
+

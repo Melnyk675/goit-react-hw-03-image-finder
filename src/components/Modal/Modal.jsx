@@ -1,11 +1,10 @@
-import { Component } from 'react'; 
+import { Component } from 'react';
 import { createPortal } from 'react-dom';
 import css from './Modal.module.css'; 
 
 const modalRoot = document.querySelector('#modal-root');
 
 export class Modal extends Component {
-
   componentDidMount() {
     window.addEventListener('keydown', this.keyDown); 
   }
@@ -27,12 +26,10 @@ export class Modal extends Component {
   }
 
   render() {
-    return createPortal(
-    <div onClick={this.handleClose} className={css.overlay}>
-      <div className={css.modal}>
-      {this.props.children}
-      </div> 
+    return createPortal (<div onClick={this.handleClose} className={css.overlay}>
+      <div className={css.modal}>{this.props.children}</div> 
     </div>, modalRoot)
   }
 }
+
 

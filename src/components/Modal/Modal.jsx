@@ -3,10 +3,8 @@ import { createPortal } from 'react-dom';
 import css from './Modal.module.css'; 
 
 const modalRoot = document.getElementById('modal-root');
-console.log(modalRoot);
 
 export class Modal extends Component {
-  
   componentDidMount() {
     window.addEventListener('keydown', this.keyDown); 
   }
@@ -20,7 +18,7 @@ export class Modal extends Component {
   componentWillUnmount() {
     window.removeEventListener('keydown', this.keyDown); 
   }
-
+  
   handleClose = (evt) => {
     if (evt.currentTarget === evt.target) {
       this.props.closeModal(); 

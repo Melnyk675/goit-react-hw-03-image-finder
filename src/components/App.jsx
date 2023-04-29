@@ -19,6 +19,13 @@ export class App extends Component {
     empty: false, 
   };
 
+  constructor(props) {
+    super(props);
+    this.modalRoot = document.createElement('div');
+    this.modalRoot.setAttribute('id', 'modal-root');
+    document.body.appendChild(this.modalRoot);
+  }
+
   componentDidUpdate(_, PrevState) {
     if (
       PrevState.search !== this.state.search ||
